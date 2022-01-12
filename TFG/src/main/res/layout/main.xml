@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/vehicle_view"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_margin="@dimen/activity_horizontal_margin"
+android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/text_gps"
+            android:textSize="20px" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/text_bluetooth"
+            android:textSize="20px" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/text_obd"
+            android:textSize="20px" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/GPS_POS0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/BT_STATUS0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/OBD_STATUS0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textoInicio1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="¡No hay ningun dispositivo OBD conectado!" />
+
+    <TextView
+        android:id="@+id/textoInicio2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:gravity="center"
+
+        android:text="No se puede acceder al vehiculo sin un OBD conectado. Arranque el coche para que funcione." />
+
+    <Button
+        android:id="@+id/botonInicioConectarOBD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Conectar Dispositivo OBD" />
+
+    <Button
+        android:id="@+id/botonInicioPruebaOBD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Probar Conexion OBD" />
+
+    <Button
+        android:id="@+id/botonInicioBuscarErr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="20dp"
+        android:text="Buscar Errores"/>
+
+    <Button
+        android:id="@+id/botonConfiguracionOBDCommands"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="20dp"
+        android:text="Configurar comandos OBD"/>
+
+    <Button
+        android:id="@+id/botonInicioIniTramo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="20dp"
+        android:text="Iniciar Tramo"/>
+
+    <Button
+        android:id="@+id/botonInicioIniAnalisis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:textSize="20dp"
+        android:text="Iniciar Analisis"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:src="@color/primary_dark" />
+
+    <Button
+        android:id="@+id/botonConectarCoche"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:text="Introducir Vehiculo" />
+
+    <TextView
+        android:id="@+id/textoInicioCoche"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:text="¿Tienes dudas? \n Consulta los 'primeros pasos' en Ayuda" />
+
+    <Button
+        android:id="@+id/botonVerCoches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Ver coches y mantenimiento" />
+
+    <Button
+        android:id="@+id/botonAniadirCoches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Añadir Coches" />
+
+    <Button
+        android:id="@+id/botonQuitarCoches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Quitar Coches" />
+
+    <Button
+        android:id="@+id/botonAniadirPiezas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Añadir Piezas" />
+
+    <Button
+        android:id="@+id/botonMostrarPiezas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Mostrar Piezas" />
+
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vehicle_editor"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textoPortadaCochesPiezas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:text="Portada" />
+    
+    <EditText
+        android:id="@+id/textoEditMatricula"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Las 4 cifras de la matricula"/>
+    
+    <EditText
+        android:id="@+id/textoEditMarcaYModelo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:hint="Marca y modelo"/>
+
+    <EditText
+        android:id="@+id/textoEditAnioCoche"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:hint="Año del coche"/>
+
+    <EditText
+        android:id="@+id/textoEditKmCoche"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:hint="Kilometros actuales del coche"/>
+
+    <EditText
+        android:id="@+id/textoEditNombrePieza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:hint="Nombre de la pieza"/>
+
+    <EditText
+        android:id="@+id/textoEditCostePieza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:hint="Coste de la pieza"/>
+
+    <EditText
+        android:id="@+id/textoEditKmPieza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:hint="Kilometros a los que se cambio la pieza"/>
+
+    <EditText
+        android:id="@+id/textoEditDatePieza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:hint="Fecha en la que se cambio la pieza"/>
+
+    <Button
+        android:id="@+id/botonAniadirCoches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Añadir Coche" />
+
+    <Button
+        android:id="@+id/botonQuitarCoches"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Quitar Coche" />
+
+    <Button
+        android:id="@+id/botonAniadirPieza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Añadir Piezas" />
+
+    <Button
+        android:id="@+id/botonMostrarPiezas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Mostrar Piezas del Coche" />
+
+    <ScrollView
+        android:id="@+id/dataScrollVehiculosPiezas"
+        android:layout_width="fill_parent"
+        android:layout_height="310dp"
+        android:layout_gravity="top"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:elevation="2dp"
+        android:outlineProvider="bounds"
+        android:visibility="gone">
+
+        <TableLayout
+            android:id="@+id/dataTableVehiculosPiezas"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"></TableLayout>
+    </ScrollView>
+
+    <TableRow
+        android:id="@+id/tablaKmPieza"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textoKmRecambio"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Proxima pieza a reparar a los km:"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textoKmRecambioMostrar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="170000" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textoProximaPieza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="Proxima pieza a reparar" />
+
+    <TextView
+        android:id="@+id/textoProximaPiezaMostrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="Pieza" />
+    
+</LinearLayout>
